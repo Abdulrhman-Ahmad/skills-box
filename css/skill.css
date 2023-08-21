@@ -1,0 +1,142 @@
+*{
+    box-sizing: border-box;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-size: 2vw;
+}
+
+#skill-main-container{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(15, 1fr);
+    width: 95VW;
+    height: 50vw;
+    border: 1px solid #9da0a0;
+    box-shadow: 0px 0px 4px #9da0a0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vw;
+
+    /* scaling the skills window */
+    transform: scale(0.7);
+}
+
+
+/* allocation elements */
+#skills-header{
+    grid-area: 1 / 1 / 3 / 1;
+    background-color: #f9f9f9;
+    box-shadow: 0px 0px 3px #B17C9B;
+    display: flex;
+    align-items: center;
+}
+
+#skills-header-text{
+    padding: 2vw;
+    margin-left: 1vw;
+}
+
+#skills-header::after{
+    content: "X";
+    color: #B17C9B;
+    cursor: pointer;
+    margin-left: 78vw;
+
+}
+
+
+
+
+
+
+
+#medium{
+    grid-area: 3 / 1 / 13 / 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+#bio{
+    width: 90%;
+}
+
+#skills-container{
+    width: 90%;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 2px solid #e0e0e0;
+    box-shadow: 0px 0px 4px e0e0e0;
+
+}
+
+.box{
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    padding: 1vw;
+    margin: 1vw;
+    position: relative;;
+}
+
+.box::after{
+    content:"X";
+    margin-left: 1vw;
+    color: #b7b5b6;
+    cursor: pointer;
+
+}
+
+#details{
+    width: 90%;
+}
+
+
+
+
+#lower{
+    grid-area: 13 / 1 / 16 / 1;
+    display: flex;
+    justify-content: flex-start;
+
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.button-box{
+    width: 14vw;
+    height: 6vw;
+    margin-right: 3vw;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#save-button{
+    background-color: #e21e1e;
+    box-shadow: 0px 0px 3px #e21e1e;
+    color: white;
+
+}
+
+#cancel-button{
+    color:#e21e1e;
+    background-color: white;
+}
+button{
+    background-color: none;
+    border: none;
+    outline: none;
+}
+
+.hide{
+    display: none;
+}
+
+
+
